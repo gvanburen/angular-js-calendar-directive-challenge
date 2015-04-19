@@ -6,11 +6,20 @@
 </head>
 <body ng-controller="calendarCtrl">
 
-	<select ng-model="dateRange.month">
-		<option ng-repeat="month in dateRange.months" ng-selected="{{$index}} === dateRange.month">{{ month }}</option>
+	<select ng-model="form.month">
+		<option 
+		ng-repeat="month in dateRange.months"
+		ng-value="{{$index + 1}} " 
+		ng-selected="{{$index}} === dateRange.month">{{ month }}
+		</option>
 	</select>
-	<select ng-model="dateRange.year">
-		<option ng-repeat="year in dateRange.years" ng-selected="year === dateRange.year">{{ year }}</option>
+	<select ng-model="form.year">
+		<option 
+		ng-repeat="year in dateRange.years" 
+		ng-value="year"
+		ng-selected="year === dateRange.year">
+		{{ year }}
+		</option>
 	</select>
 
 <calendar>
