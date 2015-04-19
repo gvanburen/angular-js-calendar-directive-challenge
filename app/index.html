@@ -5,6 +5,14 @@
 <link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
 <body ng-controller="calendarCtrl">
+
+	<select>
+		<option ng-repeat="month in showDate.months" ng-selected="{{$index}} === showDate.month">{{ month }}</option>
+	</select>
+	<select>
+		<option ng-repeat="year in showDate.years" ng-selected="year === showDate.year">{{ year }}</option>
+	</select>
+
 <calendar>
 </calendar>
 
