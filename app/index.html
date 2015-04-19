@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="./main.css" />
 </head>
 <body ng-controller="calendarCtrl">
-
+	<div class="form">
 	<select ng-model="form.month">
 		<option 
 		ng-repeat="month in dateRange.months"
@@ -21,6 +21,7 @@
 		{{ year }}
 		</option>
 	</select>
+	</div>
 
 <calendar>
 </calendar>

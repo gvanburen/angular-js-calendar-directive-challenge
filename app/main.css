@@ -1,6 +1,11 @@
+.form {
+	padding-bottom: .5em;
+}
+
 calendar {
 	padding: 1em;
 }
+
 .container {
 	display: -webkit-flex;
 	display: flex;
@@ -17,11 +22,22 @@ calendar {
    	margin: 0 auto;
 }
 
+.dayName {
+	border: 1px solid black;
+	width: calc(80%/6);
+	text-align: center;
+}
+
 .dates {
 	border: 1px solid black;
 	text-align: left;
 	height: 50px;
 	width: calc(80%/6);
+}
+
+.outsideScope {
+	color: lightgrey;
+	/*background-color: lightgrey;*/
 }
 
 /* your css code goes here */

@@ -18,7 +18,9 @@ angular.module('calendarDemoApp', [])
 				var selectedDates = new Date(newValue);
 				//console.log(selectedDates);
 				var range = CalendarRange.getMonthlyRange(selectedDates);
+				$rootScope.weekly = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 				$rootScope.days = range;
+				console.log($rootScope);
 			})
 		}
 	}

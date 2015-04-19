@@ -1,5 +1,12 @@
 <div class="container">
-	<div class="dates" ng-repeat='day in days.days'>
-		{{day.day}}
+	<div ng-repeat="dayName in weekly"
+	class="dayName">
+	{{dayName}}
+	</div>
+	<div 
+	ng-repeat="day in days.days"
+	ng-class="{ outsideScope: day.month !== form.month-1 }"
+	class="dates">
+	{{day.day}}
 	</div>
 </div>
