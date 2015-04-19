@@ -1,1 +1,23 @@
+/*.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+   	justify-content: center;
+   	-webkit-flex-wrap: wrap;
+   	flex-wrap: wrap;
+   	width: 400px;
+   	margin: 0 auto;
+}
+
+.dates {
+	border: 1px solid black;
+	text-align: left;
+	height: 50px;
+	width: 50px;
+}*/
+
 /* your css code goes here */
