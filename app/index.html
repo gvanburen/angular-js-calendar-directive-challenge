@@ -7,10 +7,10 @@
 <body ng-controller="calendarCtrl">
 
 	<select>
-		<option ng-repeat="month in showDate.months" ng-selected="{{$index}} === showDate.month">{{ month }}</option>
+		<option ng-repeat="month in dateRange.months" ng-selected="{{$index}} === dateRange.month">{{ month }}</option>
 	</select>
 	<select>
-		<option ng-repeat="year in showDate.years" ng-selected="year === showDate.year">{{ year }}</option>
+		<option ng-repeat="year in dateRange.years" ng-selected="year === dateRange.year">{{ year }}</option>
 	</select>
 
 <calendar>

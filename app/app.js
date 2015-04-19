@@ -1,7 +1,7 @@
 angular.module('calendarDemoApp', [])
 .controller('calendarCtrl',['$scope',function($scope){
-	$scope.showDate = CalendarRange.currentDate();
-	console.log($scope.showDate);
+	$scope.dateRange = CalendarRange.prepareDate();
+	console.log($scope.dateRange);
 }])
 .directive('calendar', function(){
 	return {

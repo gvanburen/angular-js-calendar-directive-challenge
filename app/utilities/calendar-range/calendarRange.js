@@ -1,11 +1,12 @@
 var CalendarRange = {
 
   DAY : 24 * 60 * 60 * 1000,
-
-  currentDate: function() {
-    var d = new Date();
-    month = d.getMonth();
-    year = d.getFullYear();
+  
+  prepareDate : function() {
+    var date = new Date();
+    day = date.getDay();
+    month = date.getMonth();
+    year = date.getFullYear();
     years = [];
     months = ['January', 'February', 'March', 'April', 'May', 'June',
   'July', 'August', 'September', 'October', 'November', 'December'];
@@ -14,22 +15,13 @@ var CalendarRange = {
       years.push(i);
     }
     return {
-      month: month,
-      year: year,
-      years: years,
-      months: months
-    };
-  },
-  
-  prepareDate : function(date) {
-    date = new Date(date);
-    var day = date.getDay();
-    return {
       date : date,
       weekday : day != 0 && day != 6,
       day : date.getDate(),
-      month : date.getMonth(),
-      year : date.getFullYear()
+      month : month,
+      months : months,
+      year : year,
+      years : years
     };
   },
 
