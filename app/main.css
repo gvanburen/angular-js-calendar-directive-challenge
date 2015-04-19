@@ -1,15 +1,19 @@
-/*.container {
+calendar {
+	padding: 1em;
+}
+.container {
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
 	-webkit-align-items: center;
+	-webkit-box-align: center;
 	align-items: center;
 	-webkit-justify-content: center;
    	justify-content: center;
    	-webkit-flex-wrap: wrap;
    	flex-wrap: wrap;
-   	width: 400px;
+   	width: 100%;
    	margin: 0 auto;
 }
 
@@ -17,7 +21,7 @@
 	border: 1px solid black;
 	text-align: left;
 	height: 50px;
-	width: 50px;
-}*/
+	width: calc(80%/6);
+}
 
 /* your css code goes here */
