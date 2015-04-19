@@ -2,9 +2,8 @@ var CalendarRange = {
 
   DAY : 24 * 60 * 60 * 1000,
   
-  prepareDate : function() {
+  initialDate : function() {
     var date = new Date();
-    day = date.getDay();
     month = date.getMonth();
     year = date.getFullYear();
     years = [];
@@ -16,12 +15,22 @@ var CalendarRange = {
     }
     return {
       date : date,
-      weekday : day != 0 && day != 6,
-      day : date.getDate(),
       month : month,
       months : months,
       year : year,
       years : years
+    };
+  },
+
+  prepareDate : function(date) {
+    date = new Date(date);
+    var day = date.getDay();
+    return {
+      date : date,
+      weekday : day != 0 && day != 6,
+      day : date.getDate(),
+      month : date.getMonth(),
+      year : date.getFullYear()
     };
   },
 
